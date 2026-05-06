@@ -2000,3 +2000,105 @@ textarea.form-input::-webkit-resizer { display: none; }
   color: var(--light-gray-70);
   font-size: var(--fs-7);
 }
+/* CODEFORCES CUSTOM CARD */
+
+.cf-card {
+  background: #f5f5f5;
+  border-radius: 18px;
+  padding: 18px;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.cf-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.cf-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+/* CF Mini Logo */
+
+.cf-logo {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.cf-logo span:nth-child(1) {
+  width: 6px;
+  height: 18px;
+  background: #f7c948;
+  border-radius: 3px;
+}
+
+.cf-logo span:nth-child(2) {
+  width: 6px;
+  height: 24px;
+  background: #4c8bf5;
+  border-radius: 3px;
+}
+
+.cf-logo span:nth-child(3) {
+  width: 6px;
+  height: 14px;
+  background: #ef4444;
+  border-radius: 3px;
+}
+
+/* Username */
+
+.cf-username {
+  color: #3b82f6;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+/* Rank */
+
+.cf-rank {
+  color: #374151;
+  margin-top: 2px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.cf-rank span {
+  color: #d946ef;
+}
+
+/* Stats */
+
+.cf-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cf-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #374151;
+  font-size: 0.88rem;
+
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.cf-row:last-child {
+  border-bottom: none;
+}
+
+.cf-row strong {
+  color: #111827;
+  font-weight: 700;
+}
